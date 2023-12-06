@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(48, 75, 75);
+    color: rgb(255, 255, 255);
+}
+
+#ProductDescription {
+    resize: none;
+}
+

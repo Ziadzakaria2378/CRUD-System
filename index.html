@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="box w-50 m-auto shadow-lg p-5 my-5">
+      <h1 class="my-5 text-center" style="font-size: 37px; ">CRUD System</h1>
+
+      <label for="ProductName" class="my-3">ProductName</label>
+      <input
+        type="text"
+        class="form-control"
+        style="background-color: #c0baba"
+        id="ProductName"
+      />
+
+      <label for="ProductCategory" class="my-4">ProductCategory</label>
+      <input
+        type="text"
+        class="form-control"
+        style="background-color: #c0baba"
+        id="ProductCategory"
+      />
+
+      <label for="ProductPrice" class="my-4">ProductPrice</label>
+      <input
+        type="number"
+        class="form-control"
+        style="background-color: #c0baba"
+        id="ProductPrice"
+      />
+
+      <label for="ProductDescription" class="my-4">ProductDescription</label>
+      <textarea
+        id="ProductDescription"
+        class="form-control"
+        cols="20"
+        rows="5"
+        style="background-color: #c0baba"
+      ></textarea>
+
+      <button onclick="addProduct()" class="btn btn-lg btn-outline-info my-4">
+        Add
+      </button>
+    </div>
+
+    <div class="w-50 m-auto my-5">
+      <input
+        id="searchInput"
+        onkeyup="search()"
+        class="form-control w-25 mx-auto my-5"
+        type="text"
+        placeholder="search... "
+        style="background-color: #c0baba"
+      />
+      <table class="table table-striped table-hover text-cnter text-white">
+        <thead>
+          <th>Index</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Description</th>
+          <th >Delete</th>
+          <th>Update</th>
+        </thead>
+
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
